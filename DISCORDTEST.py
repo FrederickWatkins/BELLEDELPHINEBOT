@@ -4,7 +4,6 @@ import discord
 
 print("Program started")
 
-load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 print("Token loaded")
