@@ -1,7 +1,6 @@
 import os
 import random
 import discord
-from dotenv import load_dotenv
 
 print("Program started")
 
