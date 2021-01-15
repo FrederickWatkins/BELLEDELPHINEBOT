@@ -1,1 +1,1 @@
-worker: python DISCORDTEST.py
+web: python DISCORDTEST.py
