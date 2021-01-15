@@ -3,8 +3,12 @@ import random
 import discord
 from dotenv import load_dotenv
 
+print("Program started")
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+
+print("Token loaded")
 
 client = discord.Client()
 
