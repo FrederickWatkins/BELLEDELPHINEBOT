@@ -29,5 +29,9 @@ async def on_message(message):
     if "🍆" in message.content:
         print("Eggplant detected")
         await message.channel.send("👀")
+        
+    if "🚨" in message.content:
+        print("💦")
+        await message.channel.send("👀")
 
 client.run(TOKEN)
