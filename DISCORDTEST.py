@@ -31,7 +31,7 @@ async def on_message(message):
         await message.channel.send("👀")
         
     if " :rotating_light:" in message.content:
-        print("💦")
-        await message.channel.send("👀")
+        print("Anti Coomer bot detected")
+        await message.channel.send("💦")
 
 client.run(TOKEN)
