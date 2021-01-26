@@ -30,7 +30,7 @@ async def on_message(message):
         print("Eggplant detected")
         await message.channel.send("👀")
         
-    if "🚨" in message.content:
+    if " :rotating_light:" in message.content:
         print("💦")
         await message.channel.send("👀")
 
