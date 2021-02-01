@@ -62,6 +62,7 @@ async def on_message(message):
                             top_scores[x]=row[1]
                     line_count += 1
                 print(f'Processed {line_count} lines.')
+            await Messagable.send()
             for x in range(5):
                 message.channel.send(str(top_users[x])+str(top_scores[x]))
 
