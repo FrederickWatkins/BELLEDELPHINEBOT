@@ -38,7 +38,7 @@ async def on_message(message):
                         with open('leaderboard.csv', mode='a') as csvw_file:
                             csv_writer = csv.writer(csvw_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                             fields = [message.author,"1"]
-                            csv_writer.write(fields)
+                            csv_writer.writerow(fields)
                 
     if "🍆" in message.content:
         print("Eggplant detected")
