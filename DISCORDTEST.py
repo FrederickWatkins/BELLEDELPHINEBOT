@@ -52,7 +52,7 @@ async def on_message(message):
         with open('leaderboard.csv') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
-            top_users = [None]*5
+            top_users = [""]*5
             top_scores = [0]*5
             for x in range(5):
                 for row in csv_reader:
