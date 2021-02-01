@@ -63,6 +63,6 @@ async def on_message(message):
                     line_count += 1
                 print(f'Processed {line_count} lines.')
             for x in range(5):
-                message.channel.send(top_users[x]+top_scores[x])
+                message.channel.send(str(top_users[x])+str(top_scores[x]))
 
 client.run(TOKEN)
