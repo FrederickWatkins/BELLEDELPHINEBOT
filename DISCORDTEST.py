@@ -56,7 +56,7 @@ async def on_message(message):
             top_scores = [0]*5
             for x in range(5):
                 for row in csv_reader:
-                    if row[1]>top_scores[x]:
+                    if int(row[1])>top_scores[x]:
                         if row[0] not in top_users:
                             top_users[x]=row[0]
                             top_scores[x]=row[1]
