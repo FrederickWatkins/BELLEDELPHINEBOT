@@ -53,7 +53,7 @@ async def on_message(message):
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
             top_users = [None]*5
-            top_scores = [None]*5
+            top_scores = [0]*5
             for x in range(5):
                 for row in csv_reader:
                     if row[1]>top_scores[x]:
@@ -62,5 +62,7 @@ async def on_message(message):
                             top_scores[x]=row[1]
                     line_count += 1
                 print(f'Processed {line_count} lines.')
+            for x in range(5):
+                message.channel.send(top_users[x]+top_scores[x])
 
 client.run(TOKEN)
