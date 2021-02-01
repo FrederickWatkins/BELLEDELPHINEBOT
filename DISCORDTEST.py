@@ -36,7 +36,7 @@ async def on_message(message):
                             found = 1
                     if found == 0:
                         with open('leaderboard.csv', mode='a') as csvw_file:
-                            csv_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                            csv_writer = csv.writer(csvw_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                             fields = [message.author,"1"]
                             csv_writer.write(fields)
                 
